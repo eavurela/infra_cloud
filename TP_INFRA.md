@@ -344,7 +344,17 @@ Verificar que el volumen haya quedado montado:
 
 Duplicaremos el archivo de configuración por defecto, utilizándolo como plantilla. Luego aplicaremos los cambios necesarios. 
 
-	
+	root@web-server:/# cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/istea.laboratorio.conf
+
+Modificar el archivo generado: 
+
+	root@web-server:/# nano /etc/apache2/sites-available/istea.laboratorio.conf
+
+		 # However, you must set it for any further virtual host explicitly.  
+		 ServerName istea.laboratorio 
+		 #ServerAdmin webmaster@localhost  
+		 DocumentRoot /var/www/network_volume
+
 
 
 Configurar el montaje automático mediante un cron: 
@@ -483,7 +493,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1OTAzOTAxNywtMjA0MjU4NDQ0MywtMT
-c1MDU5MTc1Miw3NTM1MjczMDQsLTg5MzYyNDQwNCwtMTY4MTg1
-NDI4LDkzMzY1MTg0Nl19
+eyJoaXN0b3J5IjpbNzk1ODk1NTM0LC0yMDQyNTg0NDQzLC0xNz
+UwNTkxNzUyLDc1MzUyNzMwNCwtODkzNjI0NDA0LC0xNjgxODU0
+MjgsOTMzNjUxODQ2XX0=
 -->
