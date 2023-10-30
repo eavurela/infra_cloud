@@ -235,7 +235,9 @@ Creamos sistema de archivos para sdc1
 		Creating journal (8192 blocks): done 
 		Writing superblocks and filesystem accounting information: done
 
-		
+### 6. Montaje de la unidad 
+
+Para que el dispositivo instalado sea accesible, luego de generar la tabla de particiones y el sistema de archivos, es necesario montar la unidad en alguna ubicación. 
 		
 
 
@@ -359,6 +361,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODk4MzI4ODYsMTk0NTI0NDk2Myw5Nj
-EyNjc1NDhdfQ==
+eyJoaXN0b3J5IjpbLTQxODQyOTY2LC0xMzg5ODMyODg2LDE5ND
+UyNDQ5NjMsOTYxMjY3NTQ4XX0=
 -->
