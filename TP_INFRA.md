@@ -241,11 +241,13 @@ Para que el dispositivo instalado sea accesible, luego de generar la tabla de pa
 
 Creamos el directorio en dónde se montará el dispositivo 
 
-	root@sshfs-server:~# mkdir -p /mnt/opt
+	root@sshfs-server:~# mkdir /opt/web-server/
 
 Montamos la unidad en dicho directorio 
 
-	root@sshfs-server:~# 
+	root@sshfs-server:~# mount /dev/sdc1 /opt
+
+Verificamos la unidad 
 
 
 
@@ -368,6 +370,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1MDYwNDk2LC0xMzg5ODMyODg2LDE5ND
-UyNDQ5NjMsOTYxMjY3NTQ4XX0=
+eyJoaXN0b3J5IjpbLTEyNjkxMzg1NzIsLTEzODk4MzI4ODYsMT
+k0NTI0NDk2Myw5NjEyNjc1NDhdfQ==
 -->
