@@ -260,7 +260,9 @@ Verificamos la unidad
 
 Llegada esta altura tenemos el siguiente escenario: 
 
-Servidor apache2 consulta
+Servidor apache2 consultado por el usuario www-data, que debe tener permisos en el volumen compartido. Para securizar el servidor necesitamos que sea restringido al máximo. 
+
+Por lo tanto, debemos propiciar que el 
 
 ## Export a file
 
@@ -381,6 +383,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NDgzNTAyNSwtMTM4OTgzMjg4NiwxOT
+eyJoaXN0b3J5IjpbMTk0NDM0NzczNywtMTM4OTgzMjg4NiwxOT
 Q1MjQ0OTYzLDk2MTI2NzU0OF19
 -->
