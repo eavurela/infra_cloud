@@ -291,7 +291,7 @@ Para hacer persistente el montaje debemos editar el archivo /etc/fstab. En este 
 		root@sshfs-server:~# echo "/dev/sdb1   /opt   ext4   defaults   0   2" >> /etc/fstab
 
 
-## Configu
+## Configuración del servidor web 
 
 Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
 
@@ -405,6 +405,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMjAyNDY4LDc1MzUyNzMwNCwtODkzNj
-I0NDA0LC0xNjgxODU0MjgsOTMzNjUxODQ2XX0=
+eyJoaXN0b3J5IjpbLTkxMDI2Mjc5Myw3NTM1MjczMDQsLTg5Mz
+YyNDQwNCwtMTY4MTg1NDI4LDkzMzY1MTg0Nl19
 -->
