@@ -216,6 +216,16 @@ Guardamos y salimos
 
 ### 5. Configuración del sistema de archivos 
 
+Verificamos el dispositivo sdc y la partición creada sdc1 
+
+	root@sshfs-server:~# lsblk
+	sdc      8:32   0    2G  0 disk 
+	└─sdc1   8:33   0    2G  0 part
+
+Creamos sistema de archivos para sdc1 
+
+
+
 		
 		
 
@@ -340,6 +350,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDE1MDk2MDUsMTk0NTI0NDk2Myw5Nj
-EyNjc1NDhdfQ==
+eyJoaXN0b3J5IjpbMjE3NDg4MDAyLDE5NDUyNDQ5NjMsOTYxMj
+Y3NTQ4XX0=
 -->
