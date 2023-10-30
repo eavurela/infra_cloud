@@ -307,10 +307,10 @@ Para la configuración del servidor web se necesitará:
 
 Ingreso al sistema con usuario y contraseña generados en la instalación del a imagen. 
 
-Copiar archivo de configuración de red para el sevidor de almacenamiento. 
+Copiar archivo de configuración de red para el sevidor web. 
 
 		$ sudo su 
-		# cp /sshfs.conf /etc/netplan/00-installer-config.yaml
+		# cp /web.conf /etc/netplan/00-installer-config.yaml
 Aplicar configuración de red 
 
 		# netplan apply
@@ -321,6 +321,9 @@ Prueba de conectividad
 	64 bytes from 8.8.8.8: icmp_seq=1 ttl=115 time=14.5 ms 
 	64 bytes from 8.8.8.8: icmp_seq=2 ttl=115 time=16.4 ms 
 	64 bytes from 8.8.8.8: icmp_seq=3 ttl=115 time=11.1 ms
+
+### 2. Instalación del servidor apache2 
+
 
 There are two types of synchronization and they can complement each other:
 
@@ -432,7 +435,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjY2MTgxNTcsLTE3NTA1OTE3NTIsNz
-UzNTI3MzA0LC04OTM2MjQ0MDQsLTE2ODE4NTQyOCw5MzM2NTE4
-NDZdfQ==
+eyJoaXN0b3J5IjpbNDUwMjUwNjMyLC0xNzUwNTkxNzUyLDc1Mz
+UyNzMwNCwtODkzNjI0NDA0LC0xNjgxODU0MjgsOTMzNjUxODQ2
+XX0=
 -->
