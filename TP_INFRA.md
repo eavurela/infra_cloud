@@ -293,7 +293,17 @@ Para hacer persistente el montaje debemos editar el archivo /etc/fstab. En este 
 
 ## Configuración del servidor web 
 
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
+Para la configuración del servidor web se necesitará: 
+ 
+1. Configuración de la red 
+2. Instalación del servidor apache2 
+3. Configuración del VirtualHost
+4. 
+6. Montaje de la unidad 
+7. Configuración del directorio compartido, con usuario y permisos 
+8. Configuración de la unidad para el montaje automático 
+
+
 
 There are two types of synchronization and they can complement each other:
 
@@ -405,6 +415,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMDI2Mjc5Myw3NTM1MjczMDQsLTg5Mz
-YyNDQwNCwtMTY4MTg1NDI4LDkzMzY1MTg0Nl19
+eyJoaXN0b3J5IjpbODYwMDMwMjExLDc1MzUyNzMwNCwtODkzNj
+I0NDA0LC0xNjgxODU0MjgsOTMzNjUxODQ2XX0=
 -->
