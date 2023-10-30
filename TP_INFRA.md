@@ -286,14 +286,12 @@ Como se observa, el usuario y grupo del directorio /opt/webserver es www-data
 
 ### 8. Configuración de la unidad para el montaje automático 
 
-Para hacer persistente el montaje debemos editar el archivo /etc/fstab 
+Para hacer persistente el montaje debemos editar el archivo /etc/fstab. En este caso envio la salida del echo al final del archivo /etc/fstab
 
-		root@sshfs-server:~# nano /etc/fstab
-
-
+		root@sshfs-server:~# echo "/dev/sdb1   /opt   ext4   defaults   0   2" >> /etc/fstab
 
 
-# Synchronization
+## Configu
 
 Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
 
@@ -407,6 +405,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTYzMTIzNSw3NTM1MjczMDQsLTg5Mz
-YyNDQwNCwtMTY4MTg1NDI4LDkzMzY1MTg0Nl19
+eyJoaXN0b3J5IjpbMTYyMjAyNDY4LDc1MzUyNzMwNCwtODkzNj
+I0NDA0LC0xNjgxODU0MjgsOTMzNjUxODQ2XX0=
 -->
