@@ -296,12 +296,11 @@ Para hacer persistente el montaje debemos editar el archivo /etc/fstab. En este 
 Para la configuración del servidor web se necesitará: 
  
 1. Configuración de la red 
-2. Instalación del servidor apache2 
-3. Instalación de servicio sshfs 
-4. Montaje de volumen compartido del sitio web
-5. Configuración del VirtualHost
-6. Montaje de la unidad 
-7. Configuración de la unidad para el montaje automático 
+2. Instalación del servidor apache2 e  Instalación de servicio sshfs 
+3. Montaje de volumen compartido del sitio web
+4. Configuración del VirtualHost
+5. Montaje de la unidad 
+6. Configuración de la unidad para el montaje automático 
 
 ### 1.Configuración de la red 
 
@@ -322,10 +321,15 @@ Prueba de conectividad
 	64 bytes from 8.8.8.8: icmp_seq=2 ttl=115 time=16.4 ms 
 	64 bytes from 8.8.8.8: icmp_seq=3 ttl=115 time=11.1 ms
 
-### 2. Instalación del servidor apache2 
+### 2. Instalación del servidor apache2 y SSHFS
+
+Para instalar el servicio web y el servicio sshfs, es necesario ejecu
 
 	root@web-server:~# apt update -y && apt install -y apache2
 	root@web-server:~# apt install -y sshfs
+	
+### 3. Montaje de volumen compartido del sitio web
+
 
 
 There are two types of synchronization and they can complement each other:
@@ -438,7 +442,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1OTQ1NDk3MSwtMTc1MDU5MTc1Miw3NT
+eyJoaXN0b3J5IjpbLTEyMTE1ODA3NiwtMTc1MDU5MTc1Miw3NT
 M1MjczMDQsLTg5MzYyNDQwNCwtMTY4MTg1NDI4LDkzMzY1MTg0
 Nl19
 -->
