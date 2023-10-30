@@ -224,7 +224,16 @@ Verificamos el dispositivo sdc y la partición creada sdc1
 
 Creamos sistema de archivos para sdc1 
 
-
+		root@sshfs-server:~# mkfs.ext4 /dev/sdc1 
+		mke2fs 1.45.5 (07-Jan-2020) 
+		Creating filesystem with 524032 4k blocks and 131072 inodes 
+		Filesystem UUID: 5277292d-4356-4e0c-8cfa-f2c5c2a25915 
+		Superblock backups stored on blocks: 
+			 32768, 98304, 163840, 229376, 294912 
+		Allocating group tables: done 
+		Writing inode tables: done 
+		Creating journal (8192 blocks): done 
+		Writing superblocks and filesystem accounting information: done
 
 		
 		
@@ -350,6 +359,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE3NDg4MDAyLDE5NDUyNDQ5NjMsOTYxMj
-Y3NTQ4XX0=
+eyJoaXN0b3J5IjpbLTEzODk4MzI4ODYsMTk0NTI0NDk2Myw5Nj
+EyNjc1NDhdfQ==
 -->
