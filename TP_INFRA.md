@@ -352,7 +352,17 @@ Configurar el montaje automático mediante un cron:
 	 4. /bin/ed 
 	 Choose 1-4 [1]: 1 
 
-En 
+En el editor que se abre, agregar una línea:
+
+	..
+	# m h  dom mon dow   command
+	@reboot sshfs root@10.0.0.10:/opt/webserver /var/www/network_volume
+	..
+En el reinicio, se debeje
+
+### m h  dom mon dow   command  
+
+@reboot sshfs root@10.0.0.10:/opt/webserver /var/www/network_volume
 
 
 
@@ -466,7 +476,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTgwOTAzNTQsLTIwNDI1ODQ0NDMsLT
-E3NTA1OTE3NTIsNzUzNTI3MzA0LC04OTM2MjQ0MDQsLTE2ODE4
-NTQyOCw5MzM2NTE4NDZdfQ==
+eyJoaXN0b3J5IjpbLTI1MjY5OTczMCwtMjA0MjU4NDQ0MywtMT
+c1MDU5MTc1Miw3NTM1MjczMDQsLTg5MzYyNDQwNCwtMTY4MTg1
+NDI4LDkzMzY1MTg0Nl19
 -->
