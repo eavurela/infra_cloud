@@ -297,14 +297,30 @@ Para la configuración del servidor web se necesitará:
  
 1. Configuración de la red 
 2. Instalación del servidor apache2 
-3. Instalación de 
+3. Instalación de servicio sshfs 
 4. Montaje de volumen compartido del sitio web
 5. Configuración del VirtualHost
 6. Montaje de la unidad 
-7. Configuración del directorio compartido, con usuario y permisos 
-8. Configuración de la unidad para el montaje automático 
+7. Configuración de la unidad para el montaje automático 
 
+### 1.Configuración de la red 
 
+Ingreso al sistema con usuario y contraseña generados en la instalación del a imagen. 
+
+Copiar archivo de configuración de red para el sevidor de almacenamiento. 
+
+		$ sudo su 
+		# cp /sshfs.conf /etc/netplan/00-installer-config.yaml
+Aplicar configuración de red 
+
+		# netplan apply
+Prueba de conectividad 
+
+	# ping 8.8.8.8
+	PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data. 
+	64 bytes from 8.8.8.8: icmp_seq=1 ttl=115 time=14.5 ms 
+	64 bytes from 8.8.8.8: icmp_seq=2 ttl=115 time=16.4 ms 
+	64 bytes from 8.8.8.8: icmp_seq=3 ttl=115 time=11.1 ms
 
 There are two types of synchronization and they can complement each other:
 
@@ -416,6 +432,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTA1OTE3NTIsNzUzNTI3MzA0LC04OT
-M2MjQ0MDQsLTE2ODE4NTQyOCw5MzM2NTE4NDZdfQ==
+eyJoaXN0b3J5IjpbLTIwMjY2MTgxNTcsLTE3NTA1OTE3NTIsNz
+UzNTI3MzA0LC04OTM2MjQ0MDQsLTE2ODE4NTQyOCw5MzM2NTE4
+NDZdfQ==
 -->
