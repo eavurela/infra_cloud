@@ -340,6 +340,12 @@ Verificar que el volumen haya quedado montado:
 	..
 	root@10.0.0.10:/opt/webserver  3,9G   68K  3,7G   1% /var/www/network_volume
 	..
+### 4. Configuración del VirtualHost
+
+Duplicaremos el archivo de configuración por defecto, utilizándolo como plantilla. Luego aplicaremos los cambios necesarios. 
+
+	
+
 
 Configurar el montaje automático mediante un cron: 
 
@@ -477,7 +483,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzkyMjcwNiwtMjA0MjU4NDQ0MywtMT
+eyJoaXN0b3J5IjpbMjA1OTAzOTAxNywtMjA0MjU4NDQ0MywtMT
 c1MDU5MTc1Miw3NTM1MjczMDQsLTg5MzYyNDQwNCwtMTY4MTg1
 NDI4LDkzMzY1MTg0Nl19
 -->
