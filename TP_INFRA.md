@@ -358,7 +358,8 @@ En el editor que se abre, agregar una línea:
 	# m h  dom mon dow   command
 	@reboot sshfs root@10.0.0.10:/opt/webserver /var/www/network_volume
 	..
-En el reinicio, se debeje
+En el reinicio, se debería ejecutar solo el montaje, y considerando que en la plantilla se han agregado las llaves, debe conectarse solo.
+
 
 ### m h  dom mon dow   command  
 
@@ -476,7 +477,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MjY5OTczMCwtMjA0MjU4NDQ0MywtMT
+eyJoaXN0b3J5IjpbMTIxMzkyMjcwNiwtMjA0MjU4NDQ0MywtMT
 c1MDU5MTc1Miw3NTM1MjczMDQsLTg5MzYyNDQwNCwtMTY4MTg1
 NDI4LDkzMzY1MTg0Nl19
 -->
