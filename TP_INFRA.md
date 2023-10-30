@@ -286,7 +286,9 @@ Como se observa, el usuario y grupo del directorio /opt/webserver es www-data
 
 ### 8. Configuración de la unidad para el montaje automático 
 
-Dew
+Para hacer persistente el montaje debemos editar el archivo /etc/fstab 
+
+		root@sshfs-server:~# nano /etc/fstab
 
 
 
@@ -405,6 +407,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTA0Njc0NCw3NTM1MjczMDQsLTg5Mz
+eyJoaXN0b3J5IjpbLTIxOTYzMTIzNSw3NTM1MjczMDQsLTg5Mz
 YyNDQwNCwtMTY4MTg1NDI4LDkzMzY1MTg0Nl19
 -->
