@@ -297,8 +297,9 @@ Para la configuración del servidor web se necesitará:
  
 1. Configuración de la red 
 2. Instalación del servidor apache2 
-3. Configuración del VirtualHost
-4. 
+3. Instalación de 
+4. Montaje de volumen compartido del sitio web
+5. Configuración del VirtualHost
 6. Montaje de la unidad 
 7. Configuración del directorio compartido, con usuario y permisos 
 8. Configuración de la unidad para el montaje automático 
@@ -415,6 +416,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYwMDMwMjExLDc1MzUyNzMwNCwtODkzNj
-I0NDA0LC0xNjgxODU0MjgsOTMzNjUxODQ2XX0=
+eyJoaXN0b3J5IjpbLTE3NTA1OTE3NTIsNzUzNTI3MzA0LC04OT
+M2MjQ0MDQsLTE2ODE4NTQyOCw5MzM2NTE4NDZdfQ==
 -->
