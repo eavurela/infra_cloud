@@ -273,7 +273,16 @@ Configuración de contraseña
 
 	passwd webserver
 
-Se creará el usuario, forzando el home de dicho usuario al directorio /opt/
+Se creará el usuario, forzando el home de dicho usuario al directorio /opt/webserver/ 
+
+		root@sshfs-server:/opt# ls -lh 
+		..  
+		drwx------ 2 root     root      16K oct 29 15:48 lost+found  
+		drwxr-xr-x 3 www-data www-data 4,0K oct 29 17:08 webserver
+		..
+Como se observa, el usuario y grupo del directorio /opt/webserver es www-data
+
+drwxr-xr-x 3 www-data www-data 4,0K oct 29 17:08 webserver
 You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
 
 
@@ -391,5 +400,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NTMwMTc5LDE5NDQzNDc3MzddfQ==
+eyJoaXN0b3J5IjpbOTMzNjUxODQ2LDE5NDQzNDc3MzddfQ==
 -->
