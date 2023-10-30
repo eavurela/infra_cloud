@@ -324,6 +324,9 @@ Prueba de conectividad
 
 ### 2. Instalación del servidor apache2 
 
+	root@web-server:~# apt update -y && apt install -y apache2
+	root@web-server:~# apt install -y sshfs
+
 
 There are two types of synchronization and they can complement each other:
 
@@ -435,7 +438,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUwMjUwNjMyLC0xNzUwNTkxNzUyLDc1Mz
-UyNzMwNCwtODkzNjI0NDA0LC0xNjgxODU0MjgsOTMzNjUxODQ2
-XX0=
+eyJoaXN0b3J5IjpbMTk1OTQ1NDk3MSwtMTc1MDU5MTc1Miw3NT
+M1MjczMDQsLTg5MzYyNDQwNCwtMTY4MTg1NDI4LDkzMzY1MTg0
+Nl19
 -->
