@@ -256,6 +256,11 @@ Verificamos la unidad
 	/dev/sdc1       2,0G   24K  1,9G   1% /opt/
 	..
 
+### 7.  Configuración del directorio compartido, con usuario y permisos
+
+Llegada esta altura tenemos el siguiente escenario: 
+
+Servidor apache2 consulta
 
 ## Export a file
 
@@ -376,6 +381,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5OTA1MjkwNywtMTM4OTgzMjg4NiwxOT
+eyJoaXN0b3J5IjpbLTY0NDgzNTAyNSwtMTM4OTgzMjg4NiwxOT
 Q1MjQ0OTYzLDk2MTI2NzU0OF19
 -->
