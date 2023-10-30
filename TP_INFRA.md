@@ -87,7 +87,7 @@ En la siguiente configuración se puede ver que las consultas al puerto 80 http 
 		# nano /etc/nginx/sites-available/balanceo
 		upstream backend { 
 			server 10.0.0.20;
-		## <nombre><ip-del-servidor>;	 
+		## <nombre><ip-del-servidor-web-interno>;	 
 		} 
 		server { 
 				listen 80; 
@@ -283,5 +283,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkzNzY0MjUwLDk2MTI2NzU0OF19
+eyJoaXN0b3J5IjpbMTk0NTI0NDk2Myw5NjEyNjc1NDhdfQ==
 -->
