@@ -330,6 +330,9 @@ Para instalar el servicio web y el servicio sshfs, es necesario ejecutar los sig
 	
 ### 3. Montaje de volumen compartido del sitio web
 
+Con el siguiente comando se puede montar a
+
+	sshfs -o allow_other,default_permissions webserver@10.0.0.10:/opt/webserver /var/www/network_volume
 
 
 There are two types of synchronization and they can complement each other:
@@ -442,7 +445,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMTY4MTQ1NywtMTc1MDU5MTc1Miw3NT
+eyJoaXN0b3J5IjpbLTg0MDg2MDA1OSwtMTc1MDU5MTc1Miw3NT
 M1MjczMDQsLTg5MzYyNDQwNCwtMTY4MTg1NDI4LDkzMzY1MTg0
 Nl19
 -->
