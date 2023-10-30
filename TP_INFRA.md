@@ -346,14 +346,16 @@ Duplicaremos el archivo de configuración por defecto, utilizándolo como planti
 
 	root@web-server:/# cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/istea.laboratorio.conf
 
-Modificar el archivo generado: 
+Modificar las directivas **ServerName**, con el nombre del sitio web generado, y **DocumentRoot** con el directorio en dónde se encontrará el sitio web. En este caso, se utilizará el punto de montaje del almacenamiento compartido mediante el protocolo sshfs. 
 
 	root@web-server:/# nano /etc/apache2/sites-available/istea.laboratorio.conf
 
+		 ..
 		 # However, you must set it for any further virtual host explicitly.  
 		 ServerName istea.laboratorio 
 		 #ServerAdmin webmaster@localhost  
 		 DocumentRoot /var/www/network_volume
+		 ..
 
 
 
@@ -493,7 +495,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk1ODk1NTM0LC0yMDQyNTg0NDQzLC0xNz
-UwNTkxNzUyLDc1MzUyNzMwNCwtODkzNjI0NDA0LC0xNjgxODU0
-MjgsOTMzNjUxODQ2XX0=
+eyJoaXN0b3J5IjpbLTE2NTU5NzMxMjQsLTIwNDI1ODQ0NDMsLT
+E3NTA1OTE3NTIsNzUzNTI3MzA0LC04OTM2MjQ0MDQsLTE2ODE4
+NTQyOCw5MzM2NTE4NDZdfQ==
 -->
