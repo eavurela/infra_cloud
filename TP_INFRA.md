@@ -289,6 +289,8 @@ Como se observa, el usuario y grupo del directorio /opt/webserver es www-data
 
 
 
+
+
 # Synchronization
 
 Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
@@ -403,6 +405,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MzYyNDQwNCwtMTY4MTg1NDI4LDkzMz
-Y1MTg0Nl19
+eyJoaXN0b3J5IjpbNzUzNTI3MzA0LC04OTM2MjQ0MDQsLTE2OD
+E4NTQyOCw5MzM2NTE4NDZdfQ==
 -->
