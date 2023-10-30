@@ -356,7 +356,7 @@ Modificar las directivas **ServerName**, con el nombre del sitio web generado, y
 		 #ServerAdmin webmaster@localhost  
 		 DocumentRoot /var/www/network_volume
 		 ..
-
+Tocar Control  + 0 para guardar ,  luego Control + X para salir. 
 
 
 Configurar el montaje automático mediante un cron: 
@@ -495,7 +495,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTU5NzMxMjQsLTIwNDI1ODQ0NDMsLT
-E3NTA1OTE3NTIsNzUzNTI3MzA0LC04OTM2MjQ0MDQsLTE2ODE4
-NTQyOCw5MzM2NTE4NDZdfQ==
+eyJoaXN0b3J5IjpbNDk3MzE0OTUyLC0yMDQyNTg0NDQzLC0xNz
+UwNTkxNzUyLDc1MzUyNzMwNCwtODkzNjI0NDA0LC0xNjgxODU0
+MjgsOTMzNjUxODQ2XX0=
 -->
