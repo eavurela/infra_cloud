@@ -239,7 +239,13 @@ Creamos sistema de archivos para sdc1
 
 Para que el dispositivo instalado sea accesible, luego de generar la tabla de particiones y el sistema de archivos, es necesario montar la unidad en alguna ubicación. 
 
+Creamos el directorio en dónde se montará el dispositivo 
 
+	root@sshfs-server:~# mkdir -p /mnt/opt
+
+Montamos la unidad en dicho directorio 
+
+	root@sshfs-server:~# 
 
 
 
@@ -362,6 +368,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA3Mzc3MjI4LC0xMzg5ODMyODg2LDE5ND
+eyJoaXN0b3J5IjpbNzM1MDYwNDk2LC0xMzg5ODMyODg2LDE5ND
 UyNDQ5NjMsOTYxMjY3NTQ4XX0=
 -->
