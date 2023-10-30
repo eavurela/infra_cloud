@@ -193,7 +193,7 @@ Creamos una nueva tabla de particiones vacía DOS
 	Command (m for help): o
 	Created a new DOS disklabel with disk identifier 0x066099e5. 
 
-Agregamos una nueva partición primaria, i
+Agregamos una nueva partición primaria número 1, iniciado con el sector 2048 y terminando con el último sector disponible del dispositivo.
 
 	Command (m for help): n 
 	Partition type 
@@ -210,6 +210,11 @@ Agregamos una nueva partición primaria, i
 Guardamos y salimos
 	
 	Command (m for help): w
+	The partition table has been altered. 
+	Calling ioctl() to re-read partition table. 
+	Syncing disks.
+
+### 5. Configuración del sistema de archivos 
 
 		
 		
@@ -335,6 +340,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjcyMTQyNjQsMTk0NTI0NDk2Myw5Nj
+eyJoaXN0b3J5IjpbLTIwNDE1MDk2MDUsMTk0NTI0NDk2Myw5Nj
 EyNjc1NDhdfQ==
 -->
