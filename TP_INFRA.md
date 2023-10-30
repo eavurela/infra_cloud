@@ -263,10 +263,17 @@ Llegada esta altura tenemos el siguiente escenario:
 
 Servidor apache2 consultado por el usuario www-data, que debe tener permisos en el volumen compartido. Para securizar el servidor necesitamos que sea restringido al máximo. 
 
-Se debe crear el usuario www-data en el servidor de almacenamiento, y otorgarle el owner del directorio montado. para que www-data desde el servidor web pueda 
+Se debe crear el usuario www-data en el servidor de almacenamiento, y otorgarle el owner del directorio montado. Luego www-data desde el servidor web podrá acceder al contenido. 
 
- Export a file
+Creación de usuario 
 
+	useradd -s /bin/bash -d /opt/webserver -m webserver
+
+Configuración de contraseña 
+
+	passwd webserver
+
+Se creará el usuario, forzando el home de dicho usuario al directorio /opt/
 You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
 
 
@@ -384,5 +391,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3Nzk2NTc0NSwxOTQ0MzQ3NzM3XX0=
+eyJoaXN0b3J5IjpbMTU2NTMwMTc5LDE5NDQzNDc3MzddfQ==
 -->
