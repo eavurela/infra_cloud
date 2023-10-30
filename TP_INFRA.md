@@ -219,8 +219,10 @@ Guardamos y salimos
 Verificamos el dispositivo sdc y la partición creada sdc1 
 
 	root@sshfs-server:~# lsblk
+	..
 	sdc      8:32   0    2G  0 disk 
 	└─sdc1   8:33   0    2G  0 part
+	..
 
 Creamos sistema de archivos para sdc1 
 
@@ -249,6 +251,10 @@ Montamos la unidad en dicho directorio
 
 Verificamos la unidad 
 
+	root@sshfs-server:~# df -h
+	..
+	/dev/sdc1       2,0G   24K  1,9G   1% /opt/
+	..
 
 
 ## Export a file
@@ -370,6 +376,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjkxMzg1NzIsLTEzODk4MzI4ODYsMT
-k0NTI0NDk2Myw5NjEyNjc1NDhdfQ==
+eyJoaXN0b3J5IjpbLTk5OTA1MjkwNywtMTM4OTgzMjg4NiwxOT
+Q1MjQ0OTYzLDk2MTI2NzU0OF19
 -->
