@@ -284,9 +284,9 @@ Como se observa, el usuario y grupo del directorio /opt/webserver es www-data
 
 		drwxr-xr-x 3 www-data www-data 4,0K oct 29 17:08 webserver
 
+### 8. Configuración de la unidad para el montaje automático 
 
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
 
 
 # Synchronization
@@ -403,5 +403,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODE4NTQyOCw5MzM2NTE4NDZdfQ==
+eyJoaXN0b3J5IjpbLTg5MzYyNDQwNCwtMTY4MTg1NDI4LDkzMz
+Y1MTg0Nl19
 -->
