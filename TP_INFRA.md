@@ -323,7 +323,7 @@ Prueba de conectividad
 
 ### 2. Instalación del servidor apache2 y SSHFS
 
-Para instalar el servicio web y el servicio sshfs, es necesario ejecu
+Para instalar el servicio web y el servicio sshfs, es necesario ejecutar los siguientes comandos.
 
 	root@web-server:~# apt update -y && apt install -y apache2
 	root@web-server:~# apt install -y sshfs
@@ -442,7 +442,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTE1ODA3NiwtMTc1MDU5MTc1Miw3NT
+eyJoaXN0b3J5IjpbMTUzMTY4MTQ1NywtMTc1MDU5MTc1Miw3NT
 M1MjczMDQsLTg5MzYyNDQwNCwtMTY4MTg1NDI4LDkzMzY1MTg0
 Nl19
 -->
