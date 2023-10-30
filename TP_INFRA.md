@@ -341,8 +341,18 @@ Verificar que el volumen haya quedado montado:
 	root@10.0.0.10:/opt/webserver  3,9G   68K  3,7G   1% /var/www/network_volume
 	..
 
-C
-root@10.0.0.10:/opt/webserver  3,9G   68K  3,7G   1% /var/www/network_volume
+Configurar el montaje automático mediante un cron: 
+
+	root@web-server:/var/www/network_volume# crontab -e
+	no crontab for root - using an empty one 
+	Select an editor.  To change later, run 'select-editor'. 
+	 1. /bin/nano        <---- easiest 
+	 2. /usr/bin/vim.basic 
+	 3. /usr/bin/vim.tiny 
+	 4. /bin/ed 
+	 Choose 1-4 [1]: 1 
+
+En 
 
 
 
@@ -456,7 +466,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIwNzExOTkyLC0yMDQyNTg0NDQzLC0xNz
-UwNTkxNzUyLDc1MzUyNzMwNCwtODkzNjI0NDA0LC0xNjgxODU0
-MjgsOTMzNjUxODQ2XX0=
+eyJoaXN0b3J5IjpbLTE3MTgwOTAzNTQsLTIwNDI1ODQ0NDMsLT
+E3NTA1OTE3NTIsNzUzNTI3MzA0LC04OTM2MjQ0MDQsLTE2ODE4
+NTQyOCw5MzM2NTE4NDZdfQ==
 -->
