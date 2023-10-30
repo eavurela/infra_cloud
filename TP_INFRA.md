@@ -181,17 +181,16 @@ En este caso, crearemos la partición en el volumen sdc
 		fdisk /dev/sdc
 		
 		root@sshfs-server:~# fdisk /dev/sdc 
-Welcome to fdisk (util-linux 2.34).  
+		
+		Welcome to fdisk (util-linux 2.34).  
+		Changes will remain in memory only, until you decide to write them. 
+		Be careful before using the write command. 
+		Device does not contain a recognized partition table. 
+		Created a new DOS disklabel with disk identifier 0x5c0c924e. 
 
-Changes will remain in memory only, until you decide to write them. 
+Creamos una nueva tabla de particiones vacía DOS 
 
-Be careful before using the write command. 
-
-Device does not contain a recognized partition table. 
-
-Created a new DOS disklabel with disk identifier 0x5c0c924e. 
-
-Command (m for help): o 
+	Command (m for help): o
 
 Created a new DOS disklabel with disk identifier 0x066099e5. 
 
@@ -339,6 +338,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDg3ODU4NjUsMTk0NTI0NDk2Myw5Nj
+eyJoaXN0b3J5IjpbLTE3MTg0MzI2OTIsMTk0NTI0NDk2Myw5Nj
 EyNjc1NDhdfQ==
 -->
