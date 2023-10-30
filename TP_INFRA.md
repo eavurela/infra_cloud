@@ -152,13 +152,15 @@ Prueba de conectividad
 
 
 
-En caso como en la captura tengamos respuesta, significa que se aplicó correctamente el archivo de configuración, y hay salida a internet. 
+En caso como en la captura tengamos respuesta, significa que se aplicó correctamente el archivo de configuración, y hay salida a internet, mediante el servidor proxy. 
 
 ### 3. Configuración de nombre de host 
 
 	hostnamectl set-hostname sshfs-server
 
 ### 4. Creación de partición
+
+
 		
 		
 
@@ -283,5 +285,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NTI0NDk2Myw5NjEyNjc1NDhdfQ==
+eyJoaXN0b3J5IjpbMTg1MzU5NTI4MSwxOTQ1MjQ0OTYzLDk2MT
+I2NzU0OF19
 -->
