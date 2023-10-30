@@ -191,28 +191,25 @@ En este caso, crearemos la partición en el volumen sdc
 Creamos una nueva tabla de particiones vacía DOS 
 
 	Command (m for help): o
+	Created a new DOS disklabel with disk identifier 0x066099e5. 
 
-Created a new DOS disklabel with disk identifier 0x066099e5. 
+Agregamos una nueva partición primaria, i
 
-Command (m for help): n 
+	Command (m for help): n 
+	Partition type 
+	p   primary (0 primary, 0 extended, 4 free) 
+	e   extended (container for logical partitions) 
 
-Partition type 
+	Select (default p): p 
+	Partition number (1-4, default 1): 1 
+	First sector (2048-4194303, default 2048): 
+	Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-4194303, default 4194303): 
+	
+	Created a new partition 1 of type 'Linux' and of size 2 GiB. 
 
- p   primary (0 primary, 0 extended, 4 free) 
-
- e   extended (container for logical partitions) 
-
-Select (default p): p 
-
-Partition number (1-4, default 1): 1 
-
-First sector (2048-4194303, default 2048): 
-
-Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-4194303, default 4194303): 
-
-Created a new partition 1 of type 'Linux' and of size 2 GiB. 
-
-Command (m for help): w
+Guardamos y salimos
+	
+	Command (m for help): w
 
 		
 		
@@ -338,6 +335,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTg0MzI2OTIsMTk0NTI0NDk2Myw5Nj
+eyJoaXN0b3J5IjpbLTE2MjcyMTQyNjQsMTk0NTI0NDk2Myw5Nj
 EyNjc1NDhdfQ==
 -->
