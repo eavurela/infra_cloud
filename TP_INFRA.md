@@ -29,10 +29,6 @@ Se generará una primera plantilla con configuraciones básicas, que será luego
 			- Adaptador de red 1: Adaptador NAT
 
 
-Red proxy 
-
-curl https://pastebin.com/raw/utCtxz2w > /etc/netplan/00-installer-config.yaml
-
 ## Configuración de plantilla 
 
 Ingresar al servidor con usuario y contraseña generads en la instalación.
@@ -287,5 +283,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYxMjY3NTQ4XX0=
+eyJoaXN0b3J5IjpbNzkzNzY0MjUwLDk2MTI2NzU0OF19
 -->
