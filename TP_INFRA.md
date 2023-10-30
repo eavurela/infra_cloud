@@ -227,6 +227,7 @@ Verificamos el dispositivo sdc y la partición creada sdc1
 Creamos sistema de archivos para sdc1 
 
 		root@sshfs-server:~# mkfs.ext4 /dev/sdc1 
+		
 		mke2fs 1.45.5 (07-Jan-2020) 
 		Creating filesystem with 524032 4k blocks and 131072 inodes 
 		Filesystem UUID: 5277292d-4356-4e0c-8cfa-f2c5c2a25915 
@@ -262,9 +263,9 @@ Llegada esta altura tenemos el siguiente escenario:
 
 Servidor apache2 consultado por el usuario www-data, que debe tener permisos en el volumen compartido. Para securizar el servidor necesitamos que sea restringido al máximo. 
 
-Por lo tanto, debemos propiciar que el 
+Se debe crear el usuario www-data en el servidor de almacenamiento, y otorgarle el owner del directorio montado. para que www-data desde el servidor web pueda 
 
-## Export a file
+ Export a file
 
 You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
 
@@ -383,5 +384,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NDM0NzczN119
+eyJoaXN0b3J5IjpbLTI3Nzk2NTc0NSwxOTQ0MzQ3NzM3XX0=
 -->
