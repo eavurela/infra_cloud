@@ -160,6 +160,33 @@ En caso como en la captura tengamos respuesta, significa que se aplicó correcta
 
 ### 4. Creación de partición
 
+Verificamos los dispositivos conectados. 
+	root@sshfs-server:~# lsblk 
+
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT 
+
+loop0    7:0    0 91,9M  1 loop /snap/lxd/24061 
+
+loop1    7:1    0 49,9M  1 loop /snap/snapd/18357 
+
+loop2    7:2    0 63,3M  1 loop /snap/core20/1828 
+
+loop3    7:3    0 63,5M  1 loop /snap/core20/2015 
+
+sda      8:0    0   25G  0 disk 
+
+├─sda1   8:1    0    1M  0 part 
+
+└─sda2   8:2    0   25G  0 part / 
+
+sdb      8:16   0    4G  0 disk 
+
+└─sdb1   8:17   0    4G  0 part /opt 
+
+sdc      8:32   0    2G  0 disk 
+
+sr0     11:0    1 1024M  0 rom
+
 
 		
 		
@@ -285,6 +312,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MzU5NTI4MSwxOTQ1MjQ0OTYzLDk2MT
-I2NzU0OF19
+eyJoaXN0b3J5IjpbMzQ0MjUwMjI5LDE5NDUyNDQ5NjMsOTYxMj
+Y3NTQ4XX0=
 -->
