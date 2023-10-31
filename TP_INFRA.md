@@ -434,7 +434,29 @@ Se aplican los cambios:
 
 **Agregar el host al servidor proxy**
 
-Para agregar el host al servidor proxy que balancea 
+Para agregar el host al servidor proxy que balancea se debe agregar la IP del nuevo host de servidor web al VirtualHost:
+
+		# nano /etc/nginx/sites-available/balanceo
+		
+		upstream backend { 
+			server 10.0.0.20;
+			server 10.0.0.21;
+		## <nombre><ip-del-servidor-web-interno>;	 
+		} 
+		
+		server { 
+				listen 80; 
+				server_name istea.laboratorio; 
+		##      server_name <direccion_web>
+				location / { 
+					proxy_set_header Host $host; 
+					proxy_set_header X-Real-IP $remote_addr; 
+					proxy_pass http://backend; 
+				} 
+		}
+
+Luego p
+		
 
 
 ## UML diagrams
@@ -471,5 +493,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDA0OTM5NDYsMzM2NTgxNjQ5XX0=
+eyJoaXN0b3J5IjpbNjkyODg4MDcwLDMzNjU4MTY0OV19
 -->
