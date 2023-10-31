@@ -398,7 +398,9 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 
 ## Escalabilidad horizontal 
 
-En el caso que dicha estructura necesite ser escalable de forma horizontal, 
+En el caso que dicha estructura necesite ser escalable de forma horizontal, se debería replicar el host identificado como "Servidor Web". 
+
+Luego de dicha clonación o replicación
 
 ## UML diagrams
 
@@ -434,5 +436,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyOTcxNzYzLC0xODQxNzAwNDA3XX0=
+eyJoaXN0b3J5IjpbLTE3MDU3NTMyNSwtMTg0MTcwMDQwN119
 -->
