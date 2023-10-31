@@ -1,3 +1,8 @@
+ISTEA
+Edgardo Vurela
+
+
+
 # Balanceo de carga web y almacenamiento centralizado
 
 En el siguiente documento se encontrará la información necesaria para montar un sistema de alta disponibilidad web escalable horizontalmente. 
@@ -598,5 +603,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDE3NTcxODJdfQ==
+eyJoaXN0b3J5IjpbNjQ4NzYzOTEzLC0xNzQxNzU3MTgyXX0=
 -->
