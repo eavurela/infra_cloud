@@ -120,10 +120,18 @@ Configurar iptables para redireccionar solicitudes.
 	root@servidor-proxy:/$ sudo su
 Con la siguiente sentencia se habilita el reenvio de paquetes ipv4 
 
-		root@servidor-proxy:/# sysctl net.ipv4.ip_forward=1.
+	root@servidor-proxy:/# sysctl net.ipv4.ip_forward=1.
 Con la siguiente regla de iptables se permite el nateo y el enmascaramiento de paquetes. Se declara la interfaz de red enp0s8, que es la interfaz puente en el laboratorio.
 
 	root@servidor-proxy:/# iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
+
+Para dejarlo persistente: 
+
+	root@servidor-proxy:/# crontab -e 
+
+Luego editar el archivo de crontab agregando la regla 
+
+	@reboot sleep 10 %% iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
 
 
 ### 2. Redirección de solicitudes http desde internet al servidor web
@@ -608,5 +616,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE4MzY1NjcxXX0=
+eyJoaXN0b3J5IjpbMTMxOTE5MjYwOCw4MTgzNjU2NzFdfQ==
 -->
