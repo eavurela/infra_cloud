@@ -53,8 +53,9 @@ SERVIDOR PROXY
 	curl https://pastebin.com/raw/utCtxz2w > /proxy.conf
 
 Detalle de configuración de red. 
-La interfaz  enp0s9 con ip estática privada, correspondiente a la interfaz de nat. 
-La interfaz enp0s8 con ip estática puente, correspondiente al a interfaz que llamaremos pública, con acceso a internet. 
+
+La interfaz **enp0s9** con ip estática privada, correspondiente a la interfaz de nat. 
+La interfaz **enp0s8** con ip estática puente, correspondiente al a interfaz que llamaremos pública, con acceso a internet. 
 		
 		network:
 		  ethernets:
@@ -91,11 +92,39 @@ SERVIDOR ALMANCEN
 
 En esta etapa se generarán las conexiones para: 
 
+0. Configuración de la red
 1. Redirección de solicitudes de redes internas a internet
 2. Redirección de solicitudes http desde internet al servidor web 
 3. Activación del VirtualHost
 
+### 0. Configuración de la red 
 
+Detalle de configuración de red. 
+
+La interfaz **enp0s9** con ip estática privada, correspondiente a la interfaz de nat. 
+La interfaz **enp0s8** con ip estática puente, correspondiente al a interfaz que llamaremos pública, con acceso a internet. 
+		
+		network:
+		  ethernets:
+			enp0s9:
+		      addresses:
+		        - 10.0.0.100/24
+			  nameservers:
+		        addresses:
+		          - 10.0.0.1
+		    enp0s8:
+		      addresses:
+		        - 192.168.0.100/24
+		      nameservers:
+		        addresses:
+		          - 8.8.8.8
+		        search:
+		          - 4.4.4.4
+		      routes:
+		        - to: default
+		          via: 192.168.0.1
+		  version: 2
+		  
 ### 1. Redirección de solicitudes de redes internas a internet
 
 Considerando que es el único host con doble interfaz de red, y único con salida a internet deberá funcionar con nexo de las solicitudes a internet desde las instancias en la red interna. 
@@ -548,6 +577,6 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk5NTEwODU0LDIwMzU0NzA3MzIsMjA3OD
-g4NjgyXX0=
+eyJoaXN0b3J5IjpbLTk3NjI5OTkyNywyMDM1NDcwNzMyLDIwNz
+g4ODY4Ml19
 -->
