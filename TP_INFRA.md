@@ -125,14 +125,6 @@ Con la siguiente regla de iptables se permite el nateo y el enmascaramiento de p
 
 	root@servidor-proxy:/# iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
 
-Para dejarlo persistente: 
-
-	root@servidor-proxy:/# crontab -e 
-
-Luego editar el archivo de crontab agregando la regla 
-
-	@reboot sleep 10 %% iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
-
 
 ### 2. Redirección de solicitudes http desde internet al servidor web
 
@@ -616,5 +608,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxOTE5MjYwOCw4MTgzNjU2NzFdfQ==
+eyJoaXN0b3J5IjpbLTg3NTkzNjE3N119
 -->
