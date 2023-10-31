@@ -72,20 +72,22 @@ En esta etapa se generarán las conexiones para:
 Considerando que es el único host con doble interfaz de red, y único con salida a internet deberá funcionar con nexo de las solicitudes a internet desde las instancias en la red interna. 
 
 Configurar iptables para redireccionar solicitudes. 
-
-	sudo sysctl net.ipv4.ip_forward=1
-	sudo iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
+	
+	root@servidor-proxy:/# sudo su
+	root@servidor-proxy:/# sysctl net.ipv4.ip_forward=1
+	root@servidor-proxy:/# iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
 
 ### 2. Redirección de solicitudes http desde internet al servidor web
 
 Necesitaremos instalar el software que utilizaremos para redireccionar el tráfico, mediante un proxy pass. 
 
-		# apt update -y && apt install -y nginx 
+		root@servidor-proxy:/# apt update -y && apt install -y nginx 
 
 Una vez instalado, necesitaremos configurar un VirtualHost que será el encargado de la redirección. 
 En la siguiente configuración se puede ver que las consultas al puerto 80 http serán redirecciónadas a http://backend, configurado como la lista de las ips detalladas en upstream backend. En este caso, el servidor web corre en la ip "10.0.0.20" 
 
-		# nano /etc/nginx/sites-available/balanceo
+		root@servidor-proxy:/# nano /etc/nginx/sites-available/balanceo
+		
 		upstream backend { 
 			server 10.0.0.20;
 		## <nombre><ip-del-servidor-web-interno>;	 
@@ -100,6 +102,7 @@ En la siguiente configuración se puede ver que las consultas al puerto 80 http 
 					proxy_pass http://backend; 
 				} 
 		}
+
 
 ### 3. Activación VirtualHost 
 
@@ -436,7 +439,7 @@ Se aplican los cambios:
 
 Para agregar el host al servidor proxy que balancea se debe agregar la IP del nuevo host de servidor web al VirtualHost:
 
-		# nano /etc/nginx/sites-available/balanceo
+		root@servidor-proxy:/# nano /etc/nginx/sites-available/balanceo
 		
 		upstream backend { 
 			server 10.0.0.20;
@@ -455,7 +458,12 @@ Para agregar el host al servidor proxy que balancea se debe agregar la IP del nu
 				} 
 		}
 
-Luego p
+Luego probar y recargar el servicio: 
+
+	root@servidor-proxy:/#
+root@servidor-proxy:/#
+
+
 		
 
 
@@ -493,5 +501,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkyODg4MDcwLDMzNjU4MTY0OV19
+eyJoaXN0b3J5IjpbLTgwNDYxNjk2MywzMzY1ODE2NDldfQ==
 -->
