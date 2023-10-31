@@ -400,7 +400,11 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 
 En el caso que dicha estructura necesite ser escalable de forma horizontal, se debería replicar el host identificado como "Servidor Web". 
 
-Luego de dicha clonación o replicación
+Luego de dicha clonación o replicación es necesario: 
+
+Modificar dirección IP del clon: 
+
+		
 
 ## UML diagrams
 
@@ -436,5 +440,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDU3NTMyNSwtMTg0MTcwMDQwN119
+eyJoaXN0b3J5IjpbLTYxNzU3MTM1NCwtMTg0MTcwMDQwN119
 -->
