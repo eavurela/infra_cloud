@@ -395,49 +395,6 @@ En el editor que se abre, agregar una línea:
 	..
 En el reinicio, se debería ejecutar solo el montaje, y considerando que en la plantilla se han agregado las llaves, debe conectarse solo.
 
-
-### m h  dom mon dow   command  
-
-@reboot sshfs root@10.0.0.10:/opt/webserver /var/www/network_volume
-
-
-
-There are two types of synchronization and they can complement each other:
-
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
-	> To start syncing your workspace, just sign in with Google in the menu.
-
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
-	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
-
-## Open a file
-
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
-
-## Save a file
-
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-## Synchronize a file
-
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
-
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
-
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
-
-## Manage file synchronization
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
-
-
-# Publication
-
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
-
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
-
-
 ## UML diagrams
 
 You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
@@ -459,10 +416,10 @@ And this will produce a flow chart:
 ```mermaid
 graph LR
 A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
+B --> C(Round Rect)
+C --> D(Round Rect)
+C --> E(Round Rect)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE0NzY1Nzk0LDQ5NzMxNDk1Ml19
+eyJoaXN0b3J5IjpbMTA4OTIzOTkyOSw0OTczMTQ5NTJdfQ==
 -->
