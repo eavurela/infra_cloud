@@ -198,7 +198,7 @@ Copiar archivo de configuración de red para el sevidor de almacenamiento.
 
 Detalle de configuración de red. 
 
-La interfaz **enp0s8** con ip estática privada, correspondiente a la interfaz de nat. 
+La interfaz **enp0s8** con ip estática privada, correspondiente a la interfaz de nat. Y se configura el gateway como la ip interna del servidor proxy. 
 
 		network:
 		  ethernets:
@@ -212,7 +212,7 @@ La interfaz **enp0s8** con ip estática privada, correspondiente a la interfaz d
 		          - 4.4.4.4
 		      routes:
 		        - to: default
-		          via: 192.168.0.1
+		          via: 10.0.0.100
 		  version: 2
 		  
 Aplicar configuración de red 
@@ -393,6 +393,26 @@ Copiar archivo de configuración de red para el sevidor web.
 
 		$ sudo su 
 		root@web-server:~# cp /web.conf /etc/netplan/00-installer-config.yaml
+		
+Detalle de configuración de red. 
+
+La interfaz **enp0s8** con ip estática privada, correspondiente a la interfaz de nat. Y se configura el gateway como la ip interna del servidor proxy. 
+
+		network:
+		  ethernets:
+		    enp0s8:
+		      addresses:
+		        - 10.0.0.10/24
+		      nameservers:
+		        addresses:
+		          - 8.8.8.8
+		        search:
+		          - 4.4.4.4
+		      routes:
+		        - to: default
+		          via: 10.0.0.100
+		  version: 2
+		  
 Aplicar configuración de red 
 
 		root@web-server:~# netplan apply
@@ -570,6 +590,6 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA1MTAyNTM3LDIwMzU0NzA3MzIsMjA3OD
-g4NjgyXX0=
+eyJoaXN0b3J5IjpbMTQ5OTcwMDczOSwyMDM1NDcwNzMyLDIwNz
+g4ODY4Ml19
 -->
