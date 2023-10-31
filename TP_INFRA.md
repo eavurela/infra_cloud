@@ -112,7 +112,10 @@ Comprobar la configuración de nginx
 	root@servidor-proxy:/# nginx -t 
 	nginx: the configuration file /etc/nginx/nginx.conf syntax is ok 
 	nginx: configuration file /etc/nginx/nginx.conf test is successful
-	
+
+Aplicar la configuración 
+
+	root@servidor-proxy:/# sysctemctl reload nginx service 
 
 
 ## Configuración del servidor de almacenamiento 
@@ -467,6 +470,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTA2NTQ3OTksLTE4NDE3MDA0MDddfQ
-==
+eyJoaXN0b3J5IjpbMzM2NTgxNjQ5LC0xODQxNzAwNDA3XX0=
 -->
