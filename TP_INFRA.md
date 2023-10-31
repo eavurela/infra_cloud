@@ -466,7 +466,7 @@ Luego probar y recargar el servicio:
 Con esta configuración el servidor proxy debería enviar a la red interna solicitudes a ambos servidores web.		
 
 
-## Diagramas de red y ar
+## Diagramas de red y arquitectura
 
 
 ```mermaid
@@ -503,5 +503,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIzNDEwMDc4LDMzNjU4MTY0OV19
+eyJoaXN0b3J5IjpbLTI1ODE1NjYxM119
 -->
