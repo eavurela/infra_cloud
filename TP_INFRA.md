@@ -401,13 +401,13 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 ```mermaid
 sequenceDiagram
 ```
-A:
+Diagrama de red:
 
 ```mermaid
 graph LR
 A((Nube))
-----> B((Servidor Proxy))
-B --> C(Round Rect)
+--192.168.0.100--> B((Servidor Proxy))
+B --10.0.0.100--> C(Round Rect)
 C --> D(Round Rect)
 C --> E(Round Rect)
 
@@ -427,5 +427,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzIyNzU1MDIsNDk3MzE0OTUyXX0=
+eyJoaXN0b3J5IjpbLTE5MTcxNTk3MDcsNDk3MzE0OTUyXX0=
 -->
