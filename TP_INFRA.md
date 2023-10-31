@@ -79,7 +79,7 @@ En esta etapa se generarán las conexiones para:
 
 Copiar el archivo de configuración de proxy descargado y pegarlo en el archivo .yaml 
 
-	root@servidor-proxy:/# /proxy.conf /etc/netplan/00-installer-config.yaml
+	root@servidor-proxy:/# cp /proxy.conf /etc/netplan/00-installer-config.yaml
 
 Aplicar la configuración de red. 
 
@@ -608,5 +608,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzY5NDc5XX0=
+eyJoaXN0b3J5IjpbLTE2NjEzMzE0OTRdfQ==
 -->
