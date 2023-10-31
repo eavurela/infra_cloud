@@ -48,14 +48,17 @@ Considerando que las llaves generadas, nos servirán de acceso para las réplica
 
 Descarga de archivos de configuración de red para los diferentes servidores. 
 
-		SERVIDOR PROXY 
-			curl https://pastebin.com/raw/utCtxz2w > /proxy.conf
+SERVIDOR PROXY 
 			
-		SERVIDOR WEB
-			curl https://pastebin.com/raw/PsQW9LPh > /web.conf
+		curl https://pastebin.com/raw/utCtxz2w > /proxy.conf
 			
-		SERVIDOR ALMANCEN
-			curl https://pastebin.com/raw/8AhXjjSt > /sshfs.conf
+SERVIDOR WEB
+
+		curl https://pastebin.com/raw/PsQW9LPh > /web.conf
+			
+SERVIDOR ALMANCEN
+		
+		curl https://pastebin.com/raw/8AhXjjSt > /sshfs.conf
 
 
 ## Configuración del servidor proxy 
@@ -503,5 +506,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1ODE1NjYxM119
+eyJoaXN0b3J5IjpbMTE3ODkxMzY5M119
 -->
