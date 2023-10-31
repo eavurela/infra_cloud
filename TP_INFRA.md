@@ -103,8 +103,16 @@ En la siguiente configuración se puede ver que las consultas al puerto 80 http 
 
 ### 3. Activación VirtualHost 
 
+Para activar el sitio web configurado, es necesario generar un link simbolico entre el archivo generado en el directorio de sitios disponibles, al directorio de sitios activados. 
 
-		root@servidor-proxy:/# ln -s /etc/nginx/sites-available/balanceo /etc/nginx/sites-enabled/
+	root@servidor-proxy:/# ln -s /etc/nginx/sites-available/balanceo /etc/nginx/sites-enabled/
+
+Comprobar la configuración de nginx
+
+	root@servidor-proxy:/# nginx -t 
+	nginx: the configuration file /etc/nginx/nginx.conf syntax is ok 
+	nginx: configuration file /etc/nginx/nginx.conf test is successful
+	
 
 
 ## Configuración del servidor de almacenamiento 
@@ -459,5 +467,6 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MDkxMTU2NywtMTg0MTcwMDQwN119
+eyJoaXN0b3J5IjpbLTE2MTA2NTQ3OTksLTE4NDE3MDA0MDddfQ
+==
 -->
