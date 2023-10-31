@@ -395,6 +395,11 @@ En el editor que se abre, agregar una línea:
 	..
 En el reinicio, se debería ejecutar solo el montaje, y considerando que en la plantilla se han agregado las llaves, debe conectarse solo.
 
+
+## Escalabilidad horizontal 
+
+En el caso que dicha estructura necesite ser escalable de forma horizontal, 
+
 ## UML diagrams
 
 
@@ -429,5 +434,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDE3MDA0MDddfQ==
+eyJoaXN0b3J5IjpbNjIyOTcxNzYzLC0xODQxNzAwNDA3XX0=
 -->
