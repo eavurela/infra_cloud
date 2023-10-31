@@ -51,6 +51,29 @@ Descarga de archivos de configuración de red para los diferentes servidores.
 SERVIDOR PROXY 
 			
 	curl https://pastebin.com/raw/utCtxz2w > /proxy.conf
+
+Detalle de configuración de red. 
+		
+		network: ethernets:
+    enp0s9:
+      addresses:
+        - 10.0.0.100/24
+      nameservers:
+        addresses:
+          - 10.0.0.1
+    enp0s8:
+      addresses:
+        - 192.168.0.100/24
+      nameservers:
+        addresses:
+          - 8.8.8.8
+        search:
+          - 4.4.4.4
+      routes:
+        - to: default
+          via: 192.168.0.1
+  version: 2
+	
 			
 SERVIDOR WEB
 
@@ -522,5 +545,6 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTQ3MDczMiwyMDc4ODg2ODJdfQ==
+eyJoaXN0b3J5IjpbMTUyNTI2MTExMiwyMDM1NDcwNzMyLDIwNz
+g4ODY4Ml19
 -->
