@@ -54,24 +54,25 @@ SERVIDOR PROXY
 
 Detalle de configuración de red. 
 		
-		network: ethernets:
-    enp0s9:
-      addresses:
-        - 10.0.0.100/24
-      nameservers:
-        addresses:
-          - 10.0.0.1
-    enp0s8:
-      addresses:
-        - 192.168.0.100/24
-      nameservers:
-        addresses:
-          - 8.8.8.8
-        search:
-          - 4.4.4.4
-      routes:
-        - to: default
-          via: 192.168.0.1
+		network:
+		  ethernets:
+			enp0s9:
+		      addresses:
+		        - 10.0.0.100/24
+			  nameservers:
+		        addresses:
+		          - 10.0.0.1
+		    enp0s8:
+		      addresses:
+		        - 192.168.0.100/24
+		      nameservers:
+		        addresses:
+		          - 8.8.8.8
+		        search:
+		          - 4.4.4.4
+		      routes:
+		        - to: default
+		          via: 192.168.0.1
   version: 2
 	
 			
@@ -545,6 +546,6 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNTI2MTExMiwyMDM1NDcwNzMyLDIwNz
-g4ODY4Ml19
+eyJoaXN0b3J5IjpbLTE5OTIzNDAzODgsMjAzNTQ3MDczMiwyMD
+c4ODg2ODJdfQ==
 -->
