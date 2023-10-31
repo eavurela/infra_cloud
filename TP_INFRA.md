@@ -326,7 +326,10 @@ Para la configuración del servidor web se necesitará:
 5. Activación del sitio web 
 6. Configuración de la unidad para el montaje automático 
 
-### 0. 
+### 0. Configuración del hostname 
+
+		sudo hostnamectl set-hostname web-server
+
 ### 1.Configuración de la red 
 
 Ingreso al sistema con usuario y contraseña generados en la instalación del a imagen. 
@@ -334,10 +337,10 @@ Ingreso al sistema con usuario y contraseña generados en la instalación del a 
 Copiar archivo de configuración de red para el sevidor web. 
 
 		$ sudo su 
-		# cp /web.conf /etc/netplan/00-installer-config.yaml
+		root@web-server:~# cp /web.conf /etc/netplan/00-installer-config.yaml
 Aplicar configuración de red 
 
-		# netplan apply
+		root@web-server:~# netplan apply
 Prueba de conectividad 
 
 	# ping 8.8.8.8
@@ -357,7 +360,7 @@ Para instalar el servicio web y el servicio sshfs, es necesario ejecutar los sig
 
 Con el siguiente comando se puede montar mediante ssh el volumen del servidor de almacenamiento en dónde se encuentra el sitio web
 
-	sshfs root@10.0.0.10:/opt/webserver /var/www/network_volume
+	root@web-server:~# sshfs root@10.0.0.10:/opt/webserver /var/www/network_volume
 
 Verificar que el volumen haya quedado montado:
 
@@ -426,6 +429,9 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 En el caso que dicha estructura necesite ser escalable de forma horizontal, se debería replicar el host identificado como **"Servidor Web"**. 
 
 Luego de dicha clonación o replicación es necesario: 
+
+## Cambiar hostname 
+
 
 **Modificar dirección IP del clon:**
 
@@ -508,5 +514,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MjQ1NzY4NSwtODUxMjIzNzM5XX0=
+eyJoaXN0b3J5IjpbLTcxMTY5Nzg1NiwtODUxMjIzNzM5XX0=
 -->
