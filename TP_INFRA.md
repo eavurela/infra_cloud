@@ -406,11 +406,16 @@ Modificar dirección IP del clon:
 
 Con la utilización del comando sed, se puede buscar y reemplazar dentro de un archivo, en este caso se busca la dirección IP generada en la plantilla para el servidor web, por la siguiente en la subnet. 
 
+En este caso la red era 10.0.0.20, y se cambia por 10.0.0.21. Como el cambio aplica al último octeto se simplifica con: 
 
-	sed -i 's/21/20/g' /etc/netplan/00-installer-config.yaml
 
-asd
-		
+	root@web-server1:~# sed -i 's/21/20/g' /etc/netplan/00-installer-config.yaml
+
+Se aplican los cambios: 
+
+	root@web-server:~# netplan apply
+
+
 
 ## UML diagrams
 
@@ -446,6 +451,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTcyMDE2NTQsLTE4NDE3MDA0MDddfQ
-==
+eyJoaXN0b3J5IjpbMTU5Mjc0ODA5MiwtMTg0MTcwMDQwN119
 -->
