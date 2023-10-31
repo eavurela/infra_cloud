@@ -430,10 +430,11 @@ En el caso que dicha estructura necesite ser escalable de forma horizontal, se d
 
 Luego de dicha clonación o replicación es necesario: 
 
-## Cambiar hostname 
+### Cambiar hostname 
 
+	root@web-server:~# hostnamectl set-hostname web-server1
 
-**Modificar dirección IP del clon:**
+### Modificar dirección IP del clon:
 
 Con la utilización del comando sed, se puede buscar y reemplazar dentro de un archivo, en este caso se busca la dirección IP generada en la plantilla para el servidor web, por la siguiente en la subnet. 
 
@@ -514,5 +515,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTY5Nzg1NiwtODUxMjIzNzM5XX0=
+eyJoaXN0b3J5IjpbMjA3ODg4NjgyLC04NTEyMjM3MzldfQ==
 -->
