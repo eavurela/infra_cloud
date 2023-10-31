@@ -448,7 +448,7 @@ Para instalar el servicio web y el servicio sshfs, es necesario ejecutar los sig
 
 Con el siguiente comando se puede montar mediante ssh el volumen del servidor de almacenamiento en dónde se encuentra el sitio web
 
-	root@web-server:~# sshfs root@10.0.0.10:/opt/webserver /var/www/network_volume
+	root@web-server:~# sshfs -o allow_other,default_permissions root@10.0.0.10:/opt/webserver /var/www/network_volume
 
 Verificar que el volumen haya quedado montado:
 
@@ -608,5 +608,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjEzMzE0OTRdfQ==
+eyJoaXN0b3J5IjpbLTM1NzExNTIwNiwtMTY2MTMzMTQ5NF19
 -->
