@@ -1,6 +1,6 @@
 # Balanceo de carga web y almacenamiento centralizado
 
-En el siguiente documento se encontrará la información necesaria para montar un sistema de alta disponibilidad web escalable. 
+En el siguiente documento se encontrará la información necesaria para montar un sistema de alta disponibilidad web escalable horizontalmente. 
 La demostración se ejecutará en un ambiente local generado con Oracle VirtualBox, pero a nivel configuración es replicable a otros virtualizadores de infraestructura o servidores físicos. 
 En la generación de este laboratorio se utilizará Ubuntu 20.04.6 LTS.
 
@@ -515,5 +515,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3ODg4NjgyXX0=
+eyJoaXN0b3J5IjpbMjA2OTY4NTE5LDIwNzg4ODY4Ml19
 -->
