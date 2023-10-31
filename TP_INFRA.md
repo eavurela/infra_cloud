@@ -72,7 +72,7 @@ En esta etapa se generarán las conexiones para:
 
 ### 0. Configuración de la red 
 
-Detalle de configuración de red. 
+#### Detalle de configuración de red. 
 
 La interfaz **enp0s9** con ip estática privada, correspondiente a la interfaz de nat. 
 La interfaz **enp0s8** con ip estática puente, correspondiente al a interfaz que llamaremos pública, con acceso a internet. 
@@ -196,7 +196,7 @@ Copiar archivo de configuración de red para el sevidor de almacenamiento.
 		$ sudo su 
 		# cp /sshfs.conf /etc/netplan/00-installer-config.yaml
 
-Detalle de configuración de red. 
+#### Detalle de configuración de red. 
 
 La interfaz **enp0s8** con ip estática privada, correspondiente a la interfaz de nat. Y se configura el gateway como la ip interna del servidor proxy. 
 
@@ -394,7 +394,7 @@ Copiar archivo de configuración de red para el sevidor web.
 		$ sudo su 
 		root@web-server:~# cp /web.conf /etc/netplan/00-installer-config.yaml
 		
-Detalle de configuración de red. 
+#### Detalle de configuración de red. 
 
 La interfaz **enp0s8** con ip estática privada, correspondiente a la interfaz de nat. Y se configura el gateway como la ip interna del servidor proxy. 
 
@@ -402,7 +402,7 @@ La interfaz **enp0s8** con ip estática privada, correspondiente a la interfaz d
 		  ethernets:
 		    enp0s8:
 		      addresses:
-		        - 10.0.0.10/24
+		        - 10.0.0.20/24
 		      nameservers:
 		        addresses:
 		          - 8.8.8.8
@@ -590,6 +590,6 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5OTcwMDczOSwyMDM1NDcwNzMyLDIwNz
-g4ODY4Ml19
+eyJoaXN0b3J5IjpbLTIwOTYwOTAxNzYsMjAzNTQ3MDczMiwyMD
+c4ODg2ODJdfQ==
 -->
