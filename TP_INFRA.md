@@ -405,11 +405,13 @@ Diagrama de red:
 
 ```mermaid
 graph LR
-A((Nube))
---192.168.0.100--> B((Servidor Proxy))
-B --10.0.0.100--> C(Round Rect)
-C --> D(Round Rect)
-C --> E(Round Rect)
+A((Nube)) ----> B((Servidor Proxy 192.168.0.100))
+B ----> C(Servidor Web 1)
+B ----> D(Servidor Web 2)
+C ----> E(Servidor Almacenamiento)
+D ----> E(Servidor Almacenamiento)
+
+
 
 
 ```
@@ -427,5 +429,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTcxNTk3MDcsNDk3MzE0OTUyXX0=
+eyJoaXN0b3J5IjpbLTE4NDE3MDA0MDcsNDk3MzE0OTUyXX0=
 -->
