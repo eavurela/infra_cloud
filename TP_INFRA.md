@@ -356,7 +356,7 @@ Servidor apache2 consultado por el usuario www-data, que debe tener permisos en 
 
 Se debe crear el usuario www-data en el servidor de almacenamiento, y otorgarle el owner del directorio montado. Luego www-data desde el servidor web podrá acceder al contenido. 
 
-Creación de usuario 
+Creación de usuario, configurando con -d el directorio home del usuario a crear y con -m la creación del directorio en caso no exista. 
 
 	useradd -s /bin/bash -d /opt/webserver -m webserver
 
@@ -608,5 +608,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY5MDIxMTI5LC01Njk3OTM4MThdfQ==
+eyJoaXN0b3J5IjpbMTE5NTAwNjc4OV19
 -->
