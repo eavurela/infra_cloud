@@ -77,7 +77,10 @@ Considerando que es el único host con doble interfaz de red, y único con salid
 Configurar iptables para redireccionar solicitudes. 
 	
 	root@servidor-proxy:/$ sudo su
-	root@servidor-proxy:/# sysctl net.ipv4.ip_forward=1
+Con la siguiente sentencia se habilita el reenvio de paquetes ipv4 
+
+		root@servidor-proxy:/# sysctl net.ipv4.ip_forward=1.
+Con la siguiente regla del firewall unix "iptables" se le agrega a la 
 	root@servidor-proxy:/# iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
 
 
@@ -516,5 +519,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc0NDMxODI4LDIwNzg4ODY4Ml19
+eyJoaXN0b3J5IjpbMTcwMjM0Mzk3MywyMDc4ODg2ODJdfQ==
 -->
