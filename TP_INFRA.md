@@ -466,7 +466,7 @@ Luego probar y recargar el servicio:
 Con esta configuración el servidor proxy debería enviar a la red interna solicitudes a ambos servidores web.		
 
 
-## UML diagrams
+## Diagramas de red y ar
 
 
 ```mermaid
@@ -476,11 +476,11 @@ Diagrama de red:
 
 ```mermaid
 graph LR
-A((Nube)) ----> B((192.168.0.100))
-B ----> C(Servidor Web 1)
-B ----> D(Servidor Web 2)
-C ----> E(Servidor Almacenamiento)
-D ----> E(Servidor Almacenamiento)
+A((Nube)) ----> B((192.168.0.100 / 10.0.0.100))
+B --> C(Web1 10.0.0.20)
+B --> D(Web2 10.0.0.21)
+C --> E(Almacen 10.0.0.10)
+D --> E(Almacen 10.0.0.10)
 
 
 
@@ -503,5 +503,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5ODA1NDQ2NSwzMzY1ODE2NDldfQ==
+eyJoaXN0b3J5IjpbOTIzNDEwMDc4LDMzNjU4MTY0OV19
 -->
