@@ -51,33 +51,6 @@ Descarga de archivos de configuración de red para los diferentes servidores.
 SERVIDOR PROXY 
 			
 	curl https://pastebin.com/raw/utCtxz2w > /proxy.conf
-
-Detalle de configuración de red. 
-
-La interfaz **enp0s9** con ip estática privada, correspondiente a la interfaz de nat. 
-La interfaz **enp0s8** con ip estática puente, correspondiente al a interfaz que llamaremos pública, con acceso a internet. 
-		
-		network:
-		  ethernets:
-			enp0s9:
-		      addresses:
-		        - 10.0.0.100/24
-			  nameservers:
-		        addresses:
-		          - 10.0.0.1
-		    enp0s8:
-		      addresses:
-		        - 192.168.0.100/24
-		      nameservers:
-		        addresses:
-		          - 8.8.8.8
-		        search:
-		          - 4.4.4.4
-		      routes:
-		        - to: default
-		          via: 192.168.0.1
-		  version: 2
-	
 			
 SERVIDOR WEB
 
@@ -222,6 +195,26 @@ Copiar archivo de configuración de red para el sevidor de almacenamiento.
 
 		$ sudo su 
 		# cp /sshfs.conf /etc/netplan/00-installer-config.yaml
+
+Detalle de configuración de red. 
+
+La interfaz **enp0s8** con ip estática privada, correspondiente a la interfaz de nat. 
+
+		network:
+		  ethernets:
+		    enp0s8:
+		      addresses:
+		        - 10.0.0.10/24
+		      nameservers:
+		        addresses:
+		          - 8.8.8.8
+		        search:
+		          - 4.4.4.4
+		      routes:
+		        - to: default
+		          via: 192.168.0.1
+		  version: 2
+		  
 Aplicar configuración de red 
 
 		# netplan apply
@@ -577,6 +570,6 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NjI5OTkyNywyMDM1NDcwNzMyLDIwNz
-g4ODY4Ml19
+eyJoaXN0b3J5IjpbNDA1MTAyNTM3LDIwMzU0NzA3MzIsMjA3OD
+g4NjgyXX0=
 -->
