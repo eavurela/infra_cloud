@@ -318,6 +318,7 @@ Para hacer persistente el montaje debemos editar el archivo /etc/fstab. En este 
 
 Para la configuración del servidor web se necesitará: 
  
+0. Configuracion del hostname
 1. Configuración de la red 
 2. Instalación del servidor apache2 e  Instalación de servicio sshfs 
 3. Montaje de volumen compartido del sitio web
@@ -325,6 +326,7 @@ Para la configuración del servidor web se necesitará:
 5. Activación del sitio web 
 6. Configuración de la unidad para el montaje automático 
 
+### 0. 
 ### 1.Configuración de la red 
 
 Ingreso al sistema con usuario y contraseña generados en la instalación del a imagen. 
@@ -506,5 +508,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTIyMzczOV19
+eyJoaXN0b3J5IjpbLTc2MjQ1NzY4NSwtODUxMjIzNzM5XX0=
 -->
