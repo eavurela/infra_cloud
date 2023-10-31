@@ -80,7 +80,8 @@ Configurar iptables para redireccionar solicitudes.
 Con la siguiente sentencia se habilita el reenvio de paquetes ipv4 
 
 		root@servidor-proxy:/# sysctl net.ipv4.ip_forward=1.
-Con la siguiente regla de iptables se permite el nateo y el enmascaramiento de paquetes. 
+Con la siguiente regla de iptables se permite el nateo y el enmascaramiento de paquetes. Se declara la interfaz de red enp0s8, que es la interfaz puente en el laboratorio.
+
 	root@servidor-proxy:/# iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
 
 
@@ -519,5 +520,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODQxNzA5LDIwNzg4ODY4Ml19
+eyJoaXN0b3J5IjpbMTkxNzA1MzA0NSwyMDc4ODg2ODJdfQ==
 -->
