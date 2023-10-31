@@ -529,7 +529,7 @@ Con la utilización del comando sed, se puede buscar y reemplazar dentro de un a
 En este caso la red era 10.0.0.20, y se cambia por 10.0.0.21. Como el cambio aplica al último octeto se simplifica con: 
 
 
-	root@web-server1:~# sed -i 's/21/20/g' /etc/netplan/00-installer-config.yaml
+	root@web-server1:~# sed -i 's/20/21/g' /etc/netplan/00-installer-config.yaml
 
 Se aplican los cambios: 
 
@@ -608,5 +608,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NTAwNjc4OV19
+eyJoaXN0b3J5IjpbODE4MzY1NjcxXX0=
 -->
