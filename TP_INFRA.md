@@ -184,6 +184,8 @@ En caso como en la captura tengamos respuesta, significa que se aplicó correcta
 
 ### 3. Configuración de nombre de host 
 
+Con la siguiente sentencia se configura el nombre de host. Programa  -
+
 	hostnamectl set-hostname sshfs-server
 
 ### 4. Creación de partición
@@ -520,5 +522,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzA1MzA0NSwyMDc4ODg2ODJdfQ==
+eyJoaXN0b3J5IjpbLTE5NzMwOTkzNTQsMjA3ODg4NjgyXX0=
 -->
