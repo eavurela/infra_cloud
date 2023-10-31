@@ -184,7 +184,7 @@ En caso como en la captura tengamos respuesta, significa que se aplicó correcta
 
 ### 3. Configuración de nombre de host 
 
-Con la siguiente sentencia se configura el nombre de host. Programa  -
+Con la siguiente sentencia se configura el nombre de host. Programa  < argumento > < nombre-host >
 
 	hostnamectl set-hostname sshfs-server
 
@@ -254,7 +254,7 @@ Verificamos el dispositivo sdc y la partición creada sdc1
 	└─sdc1   8:33   0    2G  0 part
 	..
 
-Creamos sistema de archivos para sdc1 
+Creamos sistema de archivos ext4 para la partición sdc1 
 
 		root@sshfs-server:~# mkfs.ext4 /dev/sdc1 
 		
@@ -522,5 +522,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzMwOTkzNTQsMjA3ODg4NjgyXX0=
+eyJoaXN0b3J5IjpbMjAzNTQ3MDczMiwyMDc4ODg2ODJdfQ==
 -->
