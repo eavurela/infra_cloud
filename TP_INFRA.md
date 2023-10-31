@@ -64,9 +64,10 @@ En esta etapa se generarán las conexiones para:
 
 1. Redirección de solicitudes de redes internas a internet
 2. Redirección de solicitudes http desde internet al servidor web 
+3. Activación del VirtualHost
 
 
-### Redirección de solicitudes de redes internas a internet
+###1. Redirección de solicitudes de redes internas a internet
 
 Considerando que es el único host con doble interfaz de red, y único con salida a internet deberá funcionar con nexo de las solicitudes a internet desde las instancias en la red interna. 
 
@@ -402,7 +403,7 @@ En el caso que dicha estructura necesite ser escalable de forma horizontal, se d
 
 Luego de dicha clonación o replicación es necesario: 
 
-Modificar dirección IP del clon: 
+**Modificar dirección IP del clon:**
 
 Con la utilización del comando sed, se puede buscar y reemplazar dentro de un archivo, en este caso se busca la dirección IP generada en la plantilla para el servidor web, por la siguiente en la subnet. 
 
@@ -413,7 +414,9 @@ En este caso la red era 10.0.0.20, y se cambia por 10.0.0.21. Como el cambio apl
 
 Se aplican los cambios: 
 
-	root@web-server:~# netplan apply
+	root@web-server1:~# netplan apply
+
+**Agregar el host al servidor proxy**
 
 
 
@@ -451,5 +454,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5Mjc0ODA5MiwtMTg0MTcwMDQwN119
+eyJoaXN0b3J5IjpbMzgwOTM5ODY3LC0xODQxNzAwNDA3XX0=
 -->
