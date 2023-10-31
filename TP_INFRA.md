@@ -359,7 +359,15 @@ Modificar las directivas **ServerName**, con el nombre del sitio web generado, y
 Tocar Control  + 0 para guardar ,  luego Control + X para salir. 
 
 ### 5. Activación del sitio web 
-Para activar el sitio web agregado en la lista de sitios disponibles se puede crear un link simbólico o usar
+Para activar el sitio web agregado en la lista de sitios disponibles se puede crear un link simbólico o usar la herramienta de apache. 
+
+Utilizando herrmienta de apache
+
+	root@web-server:~# a2ensite <ServerName>
+
+e
+	root@web-server:~# a2ensite istea.laboratorio
+		
 
 Configurar el montaje automático mediante un cron: 
 
@@ -497,5 +505,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjkzNDY5MDcsNDk3MzE0OTUyXX0=
+eyJoaXN0b3J5IjpbLTU5MDM5NTYyOSw0OTczMTQ5NTJdfQ==
 -->
