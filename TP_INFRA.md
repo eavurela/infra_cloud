@@ -72,6 +72,9 @@ En esta etapa se generarán las conexiones para:
 
 ### 0. Configuración de la red 
 
+Copiar el archivo de configuración de proxy de
+	root@servidor-proxy:/# /proxy.conf /etc/netplan/00-installer-config.yaml
+
 #### Detalle de configuración de red. 
 
 La interfaz **enp0s9** con ip estática privada, correspondiente a la interfaz de nat. 
@@ -590,5 +593,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTYwOTAxNzZdfQ==
+eyJoaXN0b3J5IjpbMTgxNDEwNTgxNSwtMjA5NjA5MDE3Nl19
 -->
