@@ -299,7 +299,7 @@ Para la configuración del servidor web se necesitará:
 2. Instalación del servidor apache2 e  Instalación de servicio sshfs 
 3. Montaje de volumen compartido del sitio web
 4. Configuración del VirtualHost
-5. Montaje de la unidad 
+5. Activación del sitio web 
 6. Configuración de la unidad para el montaje automático 
 
 ### 1.Configuración de la red 
@@ -358,6 +358,8 @@ Modificar las directivas **ServerName**, con el nombre del sitio web generado, y
 		 ..
 Tocar Control  + 0 para guardar ,  luego Control + X para salir. 
 
+### 5. Activación del sitio web 
+Para activar el sitio web agregado en la lista de sitios disponibles se puede crear un link simbólico o usar
 
 Configurar el montaje automático mediante un cron: 
 
@@ -495,5 +497,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk3MzE0OTUyXX0=
+eyJoaXN0b3J5IjpbLTE3MjkzNDY5MDcsNDk3MzE0OTUyXX0=
 -->
