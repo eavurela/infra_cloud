@@ -404,6 +404,11 @@ Luego de dicha clonación o replicación es necesario:
 
 Modificar dirección IP del clon: 
 
+Con la utilización del comando sed, se puede buscar y reemplazar dentro de un archivo, en este caso se busca la dirección IP generada en la plantilla para el servidor web, por la siguiente en la subnet. 
+
+sed necesita determinar el origen y 
+
+	sed -i 's/10.0.0.20\/24/10.0.0.21\/24/g' /etc/netplan/00-installer-config.yaml
 		
 
 ## UML diagrams
@@ -440,5 +445,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNzU3MTM1NCwtMTg0MTcwMDQwN119
+eyJoaXN0b3J5IjpbMTQ5Mzg3OTMxMSwtMTg0MTcwMDQwN119
 -->
