@@ -53,6 +53,8 @@ SERVIDOR PROXY
 	curl https://pastebin.com/raw/utCtxz2w > /proxy.conf
 
 Detalle de configuración de red. 
+La interfaz  enp0s9 con ip estática privada, correspondiente a la interfaz de nat. 
+La interfaz enp0s8 con ip estática puente, correspondiente al a interfaz que llamaremos pública, con acceso a internet. 
 		
 		network:
 		  ethernets:
@@ -73,7 +75,7 @@ Detalle de configuración de red.
 		      routes:
 		        - to: default
 		          via: 192.168.0.1
-  version: 2
+		  version: 2
 	
 			
 SERVIDOR WEB
@@ -546,6 +548,6 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTIzNDAzODgsMjAzNTQ3MDczMiwyMD
-c4ODg2ODJdfQ==
+eyJoaXN0b3J5IjpbNzk5NTEwODU0LDIwMzU0NzA3MzIsMjA3OD
+g4NjgyXX0=
 -->
