@@ -76,9 +76,10 @@ Considerando que es el único host con doble interfaz de red, y único con salid
 
 Configurar iptables para redireccionar solicitudes. 
 	
-	root@servidor-proxy:/# sudo su
+	root@servidor-proxy:/$ sudo su
 	root@servidor-proxy:/# sysctl net.ipv4.ip_forward=1
 	root@servidor-proxy:/# iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
+
 
 ### 2. Redirección de solicitudes http desde internet al servidor web
 
@@ -515,5 +516,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2OTY4NTE5LDIwNzg4ODY4Ml19
+eyJoaXN0b3J5IjpbOTc0NDMxODI4LDIwNzg4ODY4Ml19
 -->
