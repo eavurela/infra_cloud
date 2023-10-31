@@ -412,11 +412,6 @@ C --> D(Round Rect)
 C --> E(Round Rect)
 
 
-
-
-```mermaid
-sequenceDiagram
-
 ```
 And this will produce a flow chart:
 
@@ -424,14 +419,14 @@ And this will produce a flow chart:
 graph LR
 A((Nube))
 ----> B((Servidor Proxy))
-B --> C(Round Rect)
-C --> D(Round Rect)
-C --> E(Round Rect)
-
+B --> C(Servidor Web)
+B --> D(Round Rect)
+C --> E(Servidor Almacenamiento)
+D --> E(Round Rect)
 
 
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDc1NzY5OTcsNDk3MzE0OTUyXX0=
+eyJoaXN0b3J5IjpbLTUwODAyOTExNSw0OTczMTQ5NTJdfQ==
 -->
