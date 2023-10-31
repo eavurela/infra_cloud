@@ -365,9 +365,15 @@ Utilizando herrmienta de apache
 
 	root@web-server:~# a2ensite <ServerName>
 
-e
+En este caso 
+
 	root@web-server:~# a2ensite istea.laboratorio
-		
+	Enabling site istea.laboratorio. 
+	To activate the new configuration, you need to run: 
+	systemctl reload apache2
+Es necesario recargar el servicio web 
+
+		systemctl reload apache2
 
 Configurar el montaje automático mediante un cron: 
 
@@ -505,5 +511,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MDM5NTYyOSw0OTczMTQ5NTJdfQ==
+eyJoaXN0b3J5IjpbMTIzOTA5NDc4MCw0OTczMTQ5NTJdfQ==
 -->
