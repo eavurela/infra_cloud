@@ -568,6 +568,7 @@ Con esta configuración el servidor proxy debería enviar a la red interna solic
 ## Bibliografía. 
 
 IPTABLES - https://serverfault.com/questions/233427/iptables-forwarding-masquerading
+HOSTNAME - https://www.hostinger.com.ar/tutoriales/como-cambiar-hostname-ubuntu
 
 
 ## Diagramas de red y arquitectura
@@ -604,5 +605,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzgwODIxNzAsLTU2OTc5MzgxOF19
+eyJoaXN0b3J5IjpbMTk0NzU5OTE5NSwtNTY5NzkzODE4XX0=
 -->
