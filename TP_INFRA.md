@@ -401,7 +401,7 @@ En el reinicio, se debería ejecutar solo el montaje, y considerando que en la p
 ```mermaid
 sequenceDiagram
 ```
-And this will produce a flow chart:
+A:
 
 ```mermaid
 graph LR
@@ -413,20 +413,19 @@ C --> E(Round Rect)
 
 
 ```
-And this will produce a flow chart:
+Diagrama de arquitectura:
 
 ```mermaid
 graph LR
-A((Nube))
-----> B((Servidor Proxy))
-B --> C(Servidor Web)
-B --> D(Round Rect)
+A((Nube)) ----> B((Servidor Proxy))
+B --> C(Servidor Web 1)
+B --> D(Servidor Web 2)
 C --> E(Servidor Almacenamiento)
-D --> E(Round Rect)
+D --> E(Servidor Almacenamiento)
 
 
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODAyOTExNSw0OTczMTQ5NTJdfQ==
+eyJoaXN0b3J5IjpbLTE1NzIyNzU1MDIsNDk3MzE0OTUyXX0=
 -->
