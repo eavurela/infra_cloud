@@ -67,7 +67,7 @@ En esta etapa se generarán las conexiones para:
 3. Activación del VirtualHost
 
 
-###1. Redirección de solicitudes de redes internas a internet
+### 1. Redirección de solicitudes de redes internas a internet
 
 Considerando que es el único host con doble interfaz de red, y único con salida a internet deberá funcionar con nexo de las solicitudes a internet desde las instancias en la red interna. 
 
@@ -76,7 +76,7 @@ Configurar iptables para redireccionar solicitudes.
 	sudo sysctl net.ipv4.ip_forward=1
 	sudo iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
 
-### Redirección de solicitudes http desde internet al servidor web
+### 2. Redirección de solicitudes http desde internet al servidor web
 
 Necesitaremos instalar el software que utilizaremos para redireccionar el tráfico, mediante un proxy pass. 
 
@@ -100,6 +100,11 @@ En la siguiente configuración se puede ver que las consultas al puerto 80 http 
 					proxy_pass http://backend; 
 				} 
 		}
+
+### 3. Activación VirtualHost 
+
+
+		root@servidor-proxy:/# ln -s /etc/nginx/sites-available/balanceo /etc/nginx/sites-enabled/
 
 
 ## Configuración del servidor de almacenamiento 
@@ -454,5 +459,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgwOTM5ODY3LC0xODQxNzAwNDA3XX0=
+eyJoaXN0b3J5IjpbLTQ0MDkxMTU2NywtMTg0MTcwMDQwN119
 -->
