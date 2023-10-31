@@ -460,11 +460,10 @@ Para agregar el host al servidor proxy que balancea se debe agregar la IP del nu
 
 Luego probar y recargar el servicio: 
 
-	root@servidor-proxy:/#
-root@servidor-proxy:/#
+	root@servidor-proxy:/# nginx -t 
+	root@servidor-proxy:/# service nginx reload
 
-
-		
+Con esta configuración el servidor proxy debería enviar a la red interna solicitudes a ambos servidores web.		
 
 
 ## UML diagrams
@@ -477,7 +476,7 @@ Diagrama de red:
 
 ```mermaid
 graph LR
-A((Nube)) ----> B((Servidor Proxy 192.168.0.100))
+A((Nube)) ----> B((192.168.0.100))
 B ----> C(Servidor Web 1)
 B ----> D(Servidor Web 2)
 C ----> E(Servidor Almacenamiento)
@@ -499,7 +498,10 @@ D --> E(Servidor Almacenamiento)
 
 
 
+
+
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNDYxNjk2MywzMzY1ODE2NDldfQ==
+eyJoaXN0b3J5IjpbMTg5ODA1NDQ2NSwzMzY1ODE2NDldfQ==
 -->
