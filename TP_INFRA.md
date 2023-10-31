@@ -1,6 +1,6 @@
 ISTEA
 Edgardo Vurela
-
+Infraestructura de Servidores
 
 
 # Balanceo de carga web y almacenamiento centralizado
@@ -603,5 +603,5 @@ D --> E(Servidor Almacenamiento)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4NzYzOTEzLC0xNzQxNzU3MTgyXX0=
+eyJoaXN0b3J5IjpbLTU2OTc5MzgxOF19
 -->
